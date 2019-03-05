@@ -56,13 +56,13 @@ const MarriottData = {
     {
       id: 3,
       locationId: 2,
-      name: 'Experience C',
+      name: 'Experience A',
       image: Pan3
     },
     {
       id: 4,
       locationId: 2,
-      name: 'Experience D',
+      name: 'Experience B',
       image: Pan1
     }
   ],

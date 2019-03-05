@@ -38,7 +38,12 @@ const Wrapper = styled.div`
 `
 
 const Image = styled.img`
-  height: 40px;
+  width: 200px;
+
+  @media screen and (min-width: 400px) {
+    background-image: url(${props => props.image});
+    width: 250px;
+  }
 `
 
 export default withRouter(Header)
