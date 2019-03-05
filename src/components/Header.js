@@ -22,7 +22,7 @@ const Header = ({ history, canNavigateBack = false }) => {
 const Arrow = styled.span`
   color: ${props => props.theme.colors.secondary}
   position: absolute;
-  left: 5%;
+  left: 25px;
   cursor: pointer;
 
   font-size: 40px;

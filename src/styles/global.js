@@ -9,6 +9,14 @@ const GlobalStyle = createGlobalStyle`
       ${props => props.theme.fonts.primary},
       ${props => props.theme.fonts.secondary};
   }
+
+  .a-loader-title {
+    font-family:
+      ${props => props.theme.fonts.primary},
+      ${props => props.theme.fonts.secondary};
+    background-color: ${props => props.theme.colors.background};
+    position: fixed;
+  }
 `
 
 export default GlobalStyle
