@@ -9,8 +9,15 @@ const Scene = ({ match }) => {
 
   return (
     <SceneWrapper>
+      <title>Loading...</title>
       <Header canNavigateBack />
-      <a-scene embedded>
+      <a-scene
+        loading-screen='dotsColor: #777; backgroundColor: #fff;'
+        embedded
+      >
+        <a-assets>
+          <img id='sky' src={image} alt='panorama' />
+        </a-assets>
         <a-sky src={image} />
       </a-scene>
     </SceneWrapper>
