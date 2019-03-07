@@ -27,7 +27,7 @@ const HeroImage = styled.div`
   @media screen and (min-width: 1024px) {
     background-image: url(${props => props.image});
     height: 800px;
-    width: 80%;
+    width: 100%;
     background-size: contain;
   }
 

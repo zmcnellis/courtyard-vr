@@ -2,9 +2,8 @@ import Logo from '../assets/marriott/logo.png'
 import LandingPage from '../assets/marriott/landing-page.jpg'
 import BistroBar from '../assets/marriott/bistro-bar.jpg'
 import FrontDesk from '../assets/marriott/front-desk.jpg'
-import Pan1 from '../assets/marriott/panorama1.jpg'
-import Pan2 from '../assets/marriott/panorama2.jpg'
-import Pan3 from '../assets/marriott/panorama.jpg'
+import Room from '../assets/marriott/room.jpg'
+import Sample from '../assets/marriott/test-panorama.jpg'
 
 const MarriottData = {
   styles: {
@@ -25,7 +24,7 @@ const MarriottData = {
   footer: {
     heading: 'View the Courtyard Experience Guide on',
     linkName: 'MGS',
-    linkUrl: 'https://www.google.com',
+    linkUrl: 'https://courtyard.marriott.com/',
     subheading: 'Marriott International Confidential & Proprietary Information'
   },
   locations: [
@@ -45,25 +44,25 @@ const MarriottData = {
       id: 1,
       locationId: 1,
       name: 'Experience A',
-      image: Pan1
+      image: Room
     },
     {
       id: 2,
       locationId: 1,
       name: 'Experience B',
-      image: Pan2
+      image: Sample
     },
     {
       id: 3,
       locationId: 2,
       name: 'Experience A',
-      image: Pan3
+      image: Room
     },
     {
       id: 4,
       locationId: 2,
       name: 'Experience B',
-      image: Pan1
+      image: Sample
     }
   ],
   brand: {
