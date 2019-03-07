@@ -3,8 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Home from './Home'
 import Scene from './Scene'
 import Location from './Location'
-
-const PageNotFound = () => <Route render={() => <h1>Page Not Found</h1>} />
+import PageNotFound from './PageNotFound'
 
 const Routes = () => {
   return (
@@ -13,7 +12,7 @@ const Routes = () => {
       <Route path='/location/:id' component={Location} />
       <Route path='/scene/:id' component={Scene} />
       <Route exact path='/scene' component={Scene} />
-      <PageNotFound />
+      <Route component={PageNotFound} />
     </Switch>
   )
 }

@@ -3,10 +3,15 @@ import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 import { useTheme } from '../../utils/hooks'
 import Header from '../../components/Header'
+import PageNotFound from '../PageNotFound'
 
 const Scene = ({ match }) => {
   const id = match.params.id
-  const { image } = useTheme('scenes').find(scene => scene.id === Number(id))
+  const { image } = useTheme('scenes')
+    .find(scene => scene.id === Number(id)) || {}
+  if (!image) {
+    return <PageNotFound />
+  }
 
   return (
     <SceneWrapper>
