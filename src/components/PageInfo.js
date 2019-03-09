@@ -36,13 +36,17 @@ const Wrapper = styled.div`
   align-items: center;
   background-color: ${props => props.theme.colors.background};
   text-align: center;
-  padding: 50px 0;
+  padding: 20px 0;
 `
 
 const Arrow = styled.span`
   color: ${props => props.theme.colors.secondary};
   position: absolute;
   left: 5%;
+
+  @media screen and (min-width: 1024px) {
+    left: calc(50% - 200px);
+  }
 
   font-size: 60px;
 `

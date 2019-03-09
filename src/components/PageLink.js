@@ -30,11 +30,12 @@ const Button = styled.button`
   position: relative;
   padding: 10px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 `
 
 const Text = styled.p`
   width: 100%;
-  color: #777;
+  color: ${props => props.theme.colors.secondary};
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;

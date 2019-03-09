@@ -24,20 +24,18 @@ const Wrapper = styled.div`
 `
 
 const HeroImage = styled.div`
+  @media screen and (min-width: 500px) {
+    height: 400px;
+    background-size: cover;
+  }
+
   @media screen and (min-width: 1024px) {
-    background-image: url(${props => props.image});
-    height: 800px;
-    width: 100%;
+    height: 450px;
     background-size: contain;
   }
 
-  @media screen and (min-width: 500px) {
-    background-image: url(${props => props.image});
-    height: 500px;
-  }
-
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-image: url(${props => props.image});
   background-repeat: no-repeat;
   background-position: center;

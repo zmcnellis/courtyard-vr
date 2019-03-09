@@ -7,8 +7,8 @@ import PageNotFound from '../PageNotFound'
 
 const Scene = ({ match }) => {
   const id = match.params.id
-  const { image } = useTheme('scenes')
-    .find(scene => scene.id === Number(id)) || {}
+  const { image } =
+    useTheme('scenes').find(scene => scene.id === Number(id)) || {}
   if (!image) {
     return <PageNotFound />
   }
@@ -17,10 +17,7 @@ const Scene = ({ match }) => {
     <SceneWrapper>
       <GlobalStyle />
       <Header canNavigateBack />
-      <a-scene
-        loading-screen='dotsColor: #777; backgroundColor: #fff;'
-        embedded
-      >
+      <a-scene loading-screen='enabled: false' embedded>
         <a-assets>
           <img id='sky' src={image} alt='panorama' />
         </a-assets>
@@ -32,7 +29,7 @@ const Scene = ({ match }) => {
 
 const SceneWrapper = styled.div`
   position: absolute;
-  height: calc(100% - 85px);
+  height: calc(100% - 75px);
   width: 100%;
 `
 

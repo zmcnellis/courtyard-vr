@@ -29,6 +29,8 @@ const Message = styled.h2`
   font-weight: normal;
   color: ${props => props.theme.colors.primary};
   max-width: 300px;
+  margin-top: 0;
+  padding: 0;
 `
 
 const Link = styled.a`

@@ -10,7 +10,7 @@ const MarriottData = {
     colors: {
       background: '#555759',
       primary: '#d99a29',
-      secondary: '#6f263d'
+      secondary: '#797B7C'
     },
     fonts: {
       primary: 'Museo',

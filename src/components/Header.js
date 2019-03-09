@@ -19,26 +19,31 @@ const Header = ({ history, canNavigateBack = false }) => {
   )
 }
 
-const Arrow = styled.span`
-  color: ${props => props.theme.colors.secondary}
-  position: absolute;
-  left: 25px;
-  cursor: pointer;
-
-  font-size: 40px;
-`
-
 const Wrapper = styled.div`
-  height: 85px;
+  height: 75px;
   background-color: ${props => props.theme.colors.background};
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+  /* border: 1px solid yellow; */
+`
+
+const Arrow = styled.span`
+  color: ${props => props.theme.colors.secondary}
+  /* border: 1px solid blue; */
+  position: absolute;
+  cursor: pointer;
+  font-size: 40px;
+  left: 25px;
+
+  @media screen and (min-width: 1024px) {
+    left: calc(50% - 200px);
+  }
 `
 
 const Image = styled.img`
   width: 200px;
+  /* border: 1px solid red; */
 
   @media screen and (min-width: 400px) {
     background-image: url(${props => props.image});
