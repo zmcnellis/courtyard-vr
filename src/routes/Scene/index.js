@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { createGlobalStyle } from 'styled-components'
 import { useTheme } from '../../utils/hooks'
 import Header from '../../components/Header'
 import PageNotFound from '../PageNotFound'
@@ -14,37 +13,30 @@ const Scene = ({ match }) => {
   }
 
   return (
-    <SceneWrapper>
-      <GlobalStyle />
+    <Wrapper>
       <Header canNavigateBack />
-      <a-scene loading-screen='enabled: false' embedded>
-        <a-assets>
-          <img id='sky' src={image} alt='panorama' />
-        </a-assets>
-        <a-sky src={image} />
-      </a-scene>
-    </SceneWrapper>
+      <SceneWrapper>
+        <a-scene loading-screen='enabled: false' embedded>
+          <a-assets>
+            <img id='sky' src={image} alt='panorama' />
+          </a-assets>
+          <a-sky src={image} />
+        </a-scene>
+      </SceneWrapper>
+    </Wrapper>
   )
 }
 
-const SceneWrapper = styled.div`
+const Wrapper = styled.div`
   position: absolute;
   height: calc(100% - 75px);
   width: 100%;
 `
 
-const GlobalStyle = createGlobalStyle`
-  html {
-    overflow: hidden;
-    width: 100%;
-  }
-  body {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
+const SceneWrapper = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
 `
 
 export default Scene
