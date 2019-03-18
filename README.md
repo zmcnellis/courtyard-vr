@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/36f57b42-f8b1-401f-a9c3-c4de66b00e4a/deploy-status)](https://app.netlify.com/sites/courtyard-vr/deploys)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -40,12 +40,12 @@ const Wrapper = styled.div`
 `
 
 const Arrow = styled.span`
-  color: ${props => props.theme.colors.secondary};
+  color: ${props => props.theme.colors.arrowLarge};
   position: absolute;
   left: 5%;
 
   @media screen and (min-width: 1024px) {
-    left: calc(50% - 200px);
+    left: calc(50% - 240px);
   }
 
   font-size: 60px;
@@ -55,7 +55,11 @@ const Text = styled.h1`
   color: ${props => props.theme.colors.primary};
   font-weight: normal;
   text-transform: uppercase;
-  max-width: 450px;
+  max-width: 90%;
+
+  @media screen and (min-width: 600px) {
+    max-width: 450px;
+  }
 `
 
 export default PageInfo

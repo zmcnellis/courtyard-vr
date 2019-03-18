@@ -1,13 +1,27 @@
 @font-face {
   font-family: "Museo";
-  src: url("./assets/marriott/MuseoSans-100.otf") format("opentype");
+  src: url("./assets/courtyard/MuseoSans-100.otf") format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Museo";
-  src: url("./assets/marriott/MuseoSans-300.otf") format("opentype");
+  src: url("./assets/courtyard/MuseoSans-300.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ClanOT";
+  src: url("./assets/springhill/ClanOT-100.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ClanOT";
+  src: url("./assets/springhill/ClanOT-300.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }

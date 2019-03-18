@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: ${props => props.theme.colors.background};
+  background-color: rgba(0, 0, 0, 0.3);
 `
 
 const HeroImage = styled.div`

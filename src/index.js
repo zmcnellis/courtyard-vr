@@ -6,11 +6,10 @@ import { Helmet } from 'react-helmet'
 import { ThemeContext } from './utils/contexts'
 import Routes from './routes'
 import GlobalStyle from './styles/global'
+import * as Data from './data'
 import './index.css'
 
-// ------------------------------------
-import ThemeData from './data/marriott'
-// ------------------------------------
+const ThemeData = Data[process.env.REACT_APP_THEME]
 
 ReactDOM.render(
   <ThemeProvider theme={ThemeData.styles}>

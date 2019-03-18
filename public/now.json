@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "courtyard-vr",
-  "alias": "courtyard-vr.now.sh",
+  "name": "springhill-vr",
+  "alias": "springhill-vr.now.sh",
   "routes": [
     { "src": "/static/(.*)", "headers": { "cache-control": "s-maxage=31536000,immutable" }, "dest": "/static/$1" },
     { "src": "/favicon.ico", "dest": "/favicon.ico" },

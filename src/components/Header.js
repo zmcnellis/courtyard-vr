@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 `
 
 const Arrow = styled.span`
-  color: ${props => props.theme.colors.secondary}
+  color: ${props => props.theme.colors.arrowLarge};
   /* border: 1px solid blue; */
   position: absolute;
   cursor: pointer;
@@ -42,12 +42,18 @@ const Arrow = styled.span`
 `
 
 const Image = styled.img`
-  width: 200px;
+  max-width: 200px;
+  max-height: 40px;
   /* border: 1px solid red; */
 
   @media screen and (min-width: 400px) {
     background-image: url(${props => props.image});
-    width: 250px;
+    max-width: 250px;
+  }
+
+  @media screen and (min-width: 600px) {
+    background-image: url(${props => props.image});
+    max-width: 300px;
   }
 `
 

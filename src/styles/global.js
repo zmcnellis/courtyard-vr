@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.colors.background};
     font-family:
       ${props => props.theme.fonts.primary},
-      ${props => props.theme.fonts.secondary};
+      ${props => props.theme.fonts.fallback};
   }
 `
 
