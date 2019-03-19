@@ -16,8 +16,7 @@ export const springhill = {
     },
     fonts: {
       primary: 'ClanOT',
-      secondary: 'ClanOT',
-      fallback: 'ClanOT'
+      fallback: 'Arial'
     }
   },
   home: {

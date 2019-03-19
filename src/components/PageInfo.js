@@ -16,7 +16,7 @@ const PageInfo = ({ text, canNavigateBack = false }) => {
         </Wrapper>
       ) : (
         <Wrapper>
-          <Text>{text}</Text>
+          <Text fullWidth>{text}</Text>
         </Wrapper>
       )}
     </React.Fragment>
@@ -55,7 +55,7 @@ const Text = styled.h1`
   color: ${props => props.theme.colors.primary};
   font-weight: normal;
   text-transform: uppercase;
-  max-width: 90%;
+  width: ${props => props.fullWidth ? '90%' : 'calc(90% - 80px)'};
 
   @media screen and (min-width: 600px) {
     max-width: 450px;

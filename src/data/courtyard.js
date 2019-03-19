@@ -16,7 +16,6 @@ export const courtyard = {
     },
     fonts: {
       primary: 'Museo',
-      secondary: 'Verdana',
       fallback: 'Verdana'
     }
   },

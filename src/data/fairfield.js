@@ -15,9 +15,8 @@ export const fairfield = {
       arrowSmall: '#c39755'
     },
     fonts: {
-      primary: 'Museo',
-      secondary: 'Verdana',
-      fallback: 'Verdana'
+      primary: 'ProximaNova',
+      fallback: 'Arial'
     }
   },
   home: {
