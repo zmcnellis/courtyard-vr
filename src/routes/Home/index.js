@@ -6,7 +6,7 @@ import PageInfo from '../../components/PageInfo'
 import Hero from '../../components/Hero'
 import { useTheme } from '../../utils/hooks'
 
-const Home = () => {
+const Home = ({ env }) => {
   const { name, image } = useTheme('home')
   const locations = useTheme('locations')
 
@@ -19,7 +19,7 @@ const Home = () => {
         <PageLink
           key={location.id}
           text={location.name}
-          path={`/location/${location.id}`}
+          path={`/${env}/location/${location.id}`}
         />
       ))}
       <Footer />

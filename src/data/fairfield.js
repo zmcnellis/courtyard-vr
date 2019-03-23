@@ -5,7 +5,7 @@ import FrontDesk from '../assets/fairfield/front-desk.jpg'
 import Room from '../assets/fairfield/room.jpg'
 import Sample from '../assets/fairfield/test-panorama.jpg'
 
-export const fairfield = {
+const Fairfield = {
   styles: {
     colors: {
       background: '#51748b',
@@ -70,7 +70,8 @@ export const fairfield = {
   brand: {
     name: 'Fairfield by Marriott',
     logo: Logo,
-    favicon: '',
     useBoldLinks: true
   }
 }
+
+export default Fairfield

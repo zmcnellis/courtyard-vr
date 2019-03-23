@@ -7,7 +7,7 @@ import PageNotFound from '../PageNotFound'
 import Hero from '../../components/Hero'
 import { useTheme } from '../../utils/hooks'
 
-const Location = ({ match }) => {
+const Location = ({ match, env }) => {
   const id = match.params.id
   const { name, image } = useTheme('locations').find(
     location => location.id === Number(id)
@@ -23,12 +23,12 @@ const Location = ({ match }) => {
     <React.Fragment>
       <Header />
       <Hero image={image} />
-      <PageInfo text={name} canNavigateBack />
+      <PageInfo text={name} env={env} canNavigateBack />
       {scenes.map(scene => (
         <PageLink
           key={scene.id}
           text={scene.name}
-          path={`/scene/${scene.id}`}
+          path={`/${env}/scene/${scene.id}`}
         />
       ))}
       <Footer />

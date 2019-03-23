@@ -5,7 +5,7 @@ import FrontDesk from '../assets/springhill/front-desk.jpg'
 import Room from '../assets/springhill/room.jpg'
 import Sample from '../assets/springhill/test-panorama.jpg'
 
-export const springhill = {
+const Springhill = {
   styles: {
     colors: {
       background: '#3e4750',
@@ -70,7 +70,8 @@ export const springhill = {
   brand: {
     name: 'SpringHill Suites by Marriott',
     logo: Logo,
-    favicon: '',
     useBoldLinks: false
   }
 }
+
+export default Springhill

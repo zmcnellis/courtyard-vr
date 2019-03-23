@@ -16,19 +16,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:courtyard": "REACT_APP_THEME=courtyard yarn start",
-    "start:fairfield": "REACT_APP_THEME=fairfield yarn start",
-    "start:springhill": "REACT_APP_THEME=springhill yarn start",
     "build": "react-scripts build",
-    "build:courtyard": "cp public/courtyard.now.json public/now.json && REACT_APP_THEME=courtyard yarn build",
-    "build:fairfield": "cp public/fairfield.now.json public/now.json && REACT_APP_THEME=fairfield yarn build",
-    "build:springhill": "cp public/springhill.now.json public/now.json && REACT_APP_THEME=springhill yarn build",
     "deploy": "yarn build && now ./build",
-    "deploy:courtyard": "yarn build:courtyard && now ./build",
-    "deploy:fairfield": "yarn build:fairfield && now ./build",
-    "deploy:springhill": "yarn build:springhill && now ./build",
-    "alias": "cd ./build && now alias",
-    "all": "yarn deploy:courtyard && yarn alias && yarn deploy:fairfield && yarn alias && yarn deploy:springhill && yarn alias"
+    "alias": "cd ./build && now alias"
   },
   "eslintConfig": {
     "extends": "react-app"

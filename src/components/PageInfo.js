@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
-const PageInfo = ({ text, canNavigateBack = false }) => {
+const PageInfo = ({ text, env, canNavigateBack = false }) => {
   return (
     <React.Fragment>
       {canNavigateBack ? (
-        <Wrapper as={Link} to='/'>
+        <Wrapper as={Link} to={`/${env}`}>
           <Arrow>
             <FontAwesomeIcon icon={faChevronLeft} />
           </Arrow>

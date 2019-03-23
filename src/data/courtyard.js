@@ -5,7 +5,7 @@ import FrontDesk from '../assets/courtyard/front-desk.jpg'
 import Room from '../assets/courtyard/room.jpg'
 import Sample from '../assets/courtyard/test-panorama.jpg'
 
-export const courtyard = {
+const Courtyard = {
   styles: {
     colors: {
       background: '#555759',
@@ -70,7 +70,8 @@ export const courtyard = {
   brand: {
     name: 'Courtyard by Marriott',
     logo: Logo,
-    favicon: '',
     useBoldLinks: true
   }
 }
+
+export default Courtyard
