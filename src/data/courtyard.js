@@ -26,7 +26,7 @@ const Courtyard = {
   footer: {
     heading: 'View the Courtyard Experience Guide on',
     linkName: 'MGS',
-    linkUrl: 'https://courtyard.marriott.com/',
+    linkUrl: 'https://mgscloud.marriott.com/common/brands/courtyard/guest-experience.html',
     subheading: 'Marriott International Confidential & Proprietary Information'
   },
   locations: [

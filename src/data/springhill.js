@@ -26,7 +26,7 @@ const Springhill = {
   footer: {
     heading: 'View the SpringHill Suites Experience Guide on',
     linkName: 'MGS',
-    linkUrl: 'http://springhillsuites.marriott.com',
+    linkUrl: 'https://mgscloud.marriott.com/common/brands/springhill-suites/guest-experience/',
     subheading: 'Marriott International Confidential & Proprietary Information'
   },
   locations: [

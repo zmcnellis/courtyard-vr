@@ -26,7 +26,7 @@ const Fairfield = {
   footer: {
     heading: 'View the Fairfield Experience Guide on',
     linkName: 'MGS',
-    linkUrl: 'https://www.fairfield.marriott.com/',
+    linkUrl: 'https://mgscloud.marriott.com/common/brands/fairfield/guest-experience/',
     subheading: 'Marriott International Confidential & Proprietary Information'
   },
   locations: [
