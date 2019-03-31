@@ -1,9 +1,11 @@
 import Logo from '../assets/fairfield/logo.png'
 import LandingPage from '../assets/fairfield/landing-page.jpg'
-import Breakfast from '../assets/fairfield/breakfast.jpg'
 import FrontDesk from '../assets/fairfield/front-desk.jpg'
-import Room from '../assets/fairfield/room.jpg'
-import Sample from '../assets/fairfield/test-panorama.jpg'
+import FrontDeskA from '../assets/fairfield/front-desk-1.jpg'
+import FrontDeskB from '../assets/fairfield/front-desk-2.jpg'
+import Breakfast from '../assets/fairfield/breakfast.jpg'
+import BreakfastA from '../assets/fairfield/breakfast-1.jpg'
+import BreakfastB from '../assets/fairfield/breakfast-2.jpg'
 
 const Fairfield = {
   styles: {
@@ -46,25 +48,25 @@ const Fairfield = {
       id: 1,
       locationId: 1,
       name: 'Experience A',
-      image: Room
+      image: FrontDeskA
     },
     {
       id: 2,
       locationId: 1,
       name: 'Experience B',
-      image: Sample
+      image: FrontDeskB
     },
     {
       id: 3,
       locationId: 2,
       name: 'Experience A',
-      image: Room
+      image: BreakfastA
     },
     {
       id: 4,
       locationId: 2,
       name: 'Experience B',
-      image: Sample
+      image: BreakfastB
     }
   ],
   brand: {

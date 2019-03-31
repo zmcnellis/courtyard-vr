@@ -1,9 +1,11 @@
 import Logo from '../assets/courtyard/logo.png'
 import LandingPage from '../assets/courtyard/landing-page.jpg'
-import BistroBar from '../assets/courtyard/bistro-bar.jpg'
 import FrontDesk from '../assets/courtyard/front-desk.jpg'
-import Room from '../assets/courtyard/room.jpg'
-import Sample from '../assets/courtyard/test-panorama.jpg'
+import FrontDeskA from '../assets/courtyard/front-desk-1.jpg'
+import FrontDeskB from '../assets/courtyard/front-desk-2.jpg'
+import BistroBar from '../assets/courtyard/bistro-bar.jpg'
+import BistroBarA from '../assets/courtyard/bistro-bar-1.jpg'
+import BistroBarB from '../assets/courtyard/bistro-bar-2.jpg'
 
 const Courtyard = {
   styles: {
@@ -46,25 +48,25 @@ const Courtyard = {
       id: 1,
       locationId: 1,
       name: 'Experience A',
-      image: Room
+      image: FrontDeskA
     },
     {
       id: 2,
       locationId: 1,
       name: 'Experience B',
-      image: Sample
+      image: FrontDeskB
     },
     {
       id: 3,
       locationId: 2,
       name: 'Experience A',
-      image: Room
+      image: BistroBarA
     },
     {
       id: 4,
       locationId: 2,
       name: 'Experience B',
-      image: Sample
+      image: BistroBarB
     }
   ],
   brand: {

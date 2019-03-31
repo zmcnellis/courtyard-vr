@@ -1,9 +1,11 @@
 import Logo from '../assets/springhill/logo.png'
 import LandingPage from '../assets/springhill/landing-page.jpg'
-import EveningExperience from '../assets/springhill/evening-experience.jpg'
 import FrontDesk from '../assets/springhill/front-desk.jpg'
-import Room from '../assets/springhill/room.jpg'
-import Sample from '../assets/springhill/test-panorama.jpg'
+import FrontDeskA from '../assets/springhill/front-desk-1.jpg'
+import FrontDeskB from '../assets/springhill/front-desk-2.jpg'
+import EveningExperience from '../assets/springhill/evening-experience.jpg'
+import EveningExperienceA from '../assets/springhill/evening-experience-1.jpg'
+import EveningExperienceB from '../assets/springhill/evening-experience-2.jpg'
 
 const Springhill = {
   styles: {
@@ -46,25 +48,25 @@ const Springhill = {
       id: 1,
       locationId: 1,
       name: 'Experience A',
-      image: Room
+      image: FrontDeskA
     },
     {
       id: 2,
       locationId: 1,
       name: 'Experience B',
-      image: Sample
+      image: FrontDeskB
     },
     {
       id: 3,
       locationId: 2,
       name: 'Experience A',
-      image: Room
+      image: EveningExperienceA
     },
     {
       id: 4,
       locationId: 2,
       name: 'Experience B',
-      image: Sample
+      image: EveningExperienceB
     }
   ],
   brand: {
