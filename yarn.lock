@@ -2330,7 +2330,7 @@ color-string@^1.5.2:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
-color@^3.0.0, color@^3.1.0:
+color@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/color/-/color-3.1.0.tgz#d8e9fb096732875774c84bf922815df0308d0ffc"
   integrity sha512-CwyopLkuRYO5ei2EpzpIh6LqJMt6Mt+jZhO5VI5f/wJLZriXQE32/SSqzmrh+QB+AZT81Cj8yv+7zwToW8ahZg==
@@ -4684,11 +4684,6 @@ imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
-
-in-viewport@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.npmjs.org/in-viewport/-/in-viewport-3.6.0.tgz#c59b4cdcaa41adb5bf5b8fe390c7d34259891f4a"
-  integrity sha512-MhaJ7Pr3NhUyAfpULysTZZBUAYfJAX1O8PccW2gvXlbQduMrJz7qQQ5yzC7SAr/0g5LbeRk432yNjsLMCnYzJg==
 
 indexes-of@^1.0.1:
   version "1.0.1"
@@ -8010,30 +8005,6 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
   integrity sha512-ioMCzVDWvCvKD8eeT+iukyWrBGrA3DiFYkXfBsVYIRdaREZuBjENG+KjrikavCLasozqRWTwFUagU/O4vPpRMA==
 
-react-lazy-hero@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/react-lazy-hero/-/react-lazy-hero-2.0.0.tgz#00f226e084b35752bdd0556544f9522a326ac982"
-  integrity sha512-P1oKvIFNnV0yKuQwWEF/UnapLxjkuTdUJfoPaeOEKIWIhKbaGqGnNJ6nrwtuJJTxR0seiVFx4NHJOAdnImLs5Q==
-  dependencies:
-    color "^3.1.0"
-    in-viewport "^3.6.0"
-    prop-types "^15.6.2"
-
-react-loader-spinner@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/react-loader-spinner/-/react-loader-spinner-2.3.0.tgz#0f14da82f42cdfdf6567f8ddac3d4bd150cea231"
-  integrity sha512-Nu7RXMyAnvdGoZLH5boXaHbqLkgBEIPO1u75zOZkZNp2V+Dg8RvvlZ05SU3ajtmsFNteFe8BJbFd0samH0tXcw==
-  dependencies:
-    babel-runtime "^6.26.0"
-    prop-types "^15.6.2"
-
-react-responsive-image@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/react-responsive-image/-/react-responsive-image-5.0.0.tgz#7b91271355c7db754ecb1e2f50c2edbee9699886"
-  integrity sha512-SFWb9nlJSDNVXLwwe4Pgzn62KLUXFhXwjed4MFFFC97qGBVbEct2zMk10F05W/Jw7da1YpglPYAdvo2Q1UmCkw==
-  dependencies:
-    prop-types "^15.5.10"
-
 react-router-dom@^4.3.1:
   version "4.3.1"
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
@@ -8045,6 +8016,11 @@ react-router-dom@^4.3.1:
     prop-types "^15.6.1"
     react-router "^4.3.1"
     warning "^4.0.1"
+
+react-router-ga@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/react-router-ga/-/react-router-ga-1.2.0.tgz#0c2ef44c933309950b6969c50189ef381cd5602f"
+  integrity sha512-mhFZDvyLGcctonjT98GrmJsHYSYeiCd7Rx4D1mb0w8oO/Ofjd1ClIOjRQx2zd1Nhx9ki6ifmvLeuR0ULldrUCA==
 
 react-router@^4.3.1:
   version "4.3.1"
