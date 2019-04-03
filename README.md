@@ -1,8 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Summary
+
+Built with the following technologies:
+
+- React
+- Create React App
+- A-Frame
+- Zeit Now 2.0
+- Google Analytics
+
+## Links
+- https://guestexp360.com/cy (Courtyard)
+- https://guestexp360.com/ff (Fairfield)
+- https://guestexp360.com/sh (SpringHill)
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+
+Installs dependencies. Run this before using any other commands.
 
 ### `yarn start`
 
@@ -17,7 +34,23 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### `yarn deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production and creates a review app using
+[Now 2.0](https://zeit.co/now).
+
+The deployment configuration is specified in the `public/now.json` file.
+
+### `yarn alias`
+
+Aliases the review app build under the `guestexp360.com` domain.
+
+For a production deployment, you should run the following command:
+
+```
+yarn deploy && yarn alias
+```
+
+## Author
+
+Zachary McNellis (zacharymcnellis@gmail.com)
