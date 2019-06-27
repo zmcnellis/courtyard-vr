@@ -1,7 +1,7 @@
 import cy from './courtyard'
 import ff from './fairfield'
-import sh from './springhill'
+import shs from './springhill'
 
-const ThemeData = { cy, ff, sh }
+const ThemeData = { cy, ff, shs }
 
 export default ThemeData

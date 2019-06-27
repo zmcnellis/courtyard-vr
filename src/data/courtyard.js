@@ -1,5 +1,7 @@
 import Logo from '../assets/courtyard/logo.png'
 import LandingPage from '../assets/courtyard/landing-page.jpg'
+import WelcomePage from '../assets/courtyard/welcome-page.jpg'
+import ThankYouPage from '../assets/courtyard/thank-you-page.jpg'
 import FrontDesk from '../assets/courtyard/front-desk.jpg'
 import FrontDeskA from '../assets/courtyard/front-desk-1.jpg'
 import FrontDeskB from '../assets/courtyard/front-desk-2.jpg'
@@ -14,7 +16,9 @@ const Courtyard = {
       primary: '#d99a29',
       secondary: '#797B7C',
       arrowLarge: '#797B7C',
-      arrowSmall: '#797B7C'
+      arrowSmall: '#797B7C',
+      button: '#d99a29',
+      buttonText: '#fff'
     },
     fonts: {
       primary: 'Museo',
@@ -24,6 +28,19 @@ const Courtyard = {
   home: {
     name: 'Activating the Courtyard Experience',
     image: LandingPage
+  },
+  welcome: {
+    heading: 'Welcome to the Guest Experience 360',
+    linkName: 'Continue',
+    linkUrl: 'https://mgscloud.marriott.com/common/brands/courtyard/guest-experience.html',
+    image: WelcomePage
+  },
+  thankYou: {
+    heading: 'Congratulations',
+    text: 'Enter your MARSHA code below to watch a Thank You video, then press submit.',
+    buttonText: 'Submit',
+    image: ThankYouPage,
+    video: ''
   },
   footer: {
     heading: 'View the Courtyard Experience Guide on',

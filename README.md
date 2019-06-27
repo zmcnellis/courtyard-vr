@@ -11,7 +11,7 @@ Built with the following technologies:
 ## Links
 - https://guestexp360.com/cy (Courtyard)
 - https://guestexp360.com/ff (Fairfield)
-- https://guestexp360.com/sh (SpringHill)
+- https://guestexp360.com/shs (SpringHill)
 
 ## Available Scripts
 

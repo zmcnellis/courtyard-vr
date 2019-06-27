@@ -4,8 +4,11 @@ import { ThemeProvider } from 'styled-components'
 import { Helmet } from 'react-helmet'
 import { ThemeContext } from '../utils/contexts'
 import Home from './Home'
-import Scene from './Scene'
+import Welcome from './Welcome'
+import Video from './Video'
+import ThankYou from './ThankYou'
 import Location from './Location'
+import Scene from './Scene'
 import PageNotFound from './PageNotFound'
 import GlobalStyle from '../styles/global'
 import ThemeData from '../data'
@@ -32,9 +35,12 @@ const withTheme = Component => {
 
 const Routes = () => (
   <Switch>
-    <Route exact path='/:env(cy|ff|sh)' component={withTheme(Home)} />
-    <Route path='/:env(cy|ff|sh)/location/:id' component={withTheme(Location)} />
-    <Route path={`/:env(cy|ff|sh)/scene/:id`} component={withTheme(Scene)} />
+    <Route exact path='/:env(cy|ff|shs)' component={withTheme(Home)} />
+    <Route path='/:env(cy|ff|shs)/welcome' component={withTheme(Welcome)} />
+    <Route path='/:env(cy|ff|shs)/thankyou/video' component={withTheme(Video)} />
+    <Route path='/:env(cy|ff|shs)/thankyou' component={withTheme(ThankYou)} />
+    <Route path='/:env(cy|ff|shs)/location/:id' component={withTheme(Location)} />
+    <Route path={`/:env(cy|ff|shs)/scene/:id`} component={withTheme(Scene)} />
     <Route component={PageNotFound} />
   </Switch>
 )
