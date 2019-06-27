@@ -1,15 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import Analytics from 'react-router-ga'
+import PageAnalytics from 'react-router-ga'
 import Routes from './routes'
 import './index.css'
 
+// TODO: when releasing to production, replace with the following line:
+// const analyticsId = 'UA-137462836-1'
+const analyticsId = 'UA-137462836-2'
+
 ReactDOM.render(
   <BrowserRouter>
-    <Analytics id='UA-137462836-1'>
+    <PageAnalytics id={analyticsId}>
       <Routes />
-    </Analytics>
+    </PageAnalytics>
   </BrowserRouter>,
   document.getElementById('root')
 )
