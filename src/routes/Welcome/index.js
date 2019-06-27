@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactGA from 'react-ga'
 import styled from 'styled-components'
 import Header from '../../components/Header'
 import WelcomeHero from '../../components/WelcomeHero'
@@ -8,13 +9,22 @@ import { useTheme } from '../../utils/hooks'
 const Welcome = () => {
   const { heading, linkName, linkUrl, image } = useTheme('welcome')
 
+  const handleClick = () => {
+    console.log('tracking button click')
+    ReactGA.event({
+      category: 'Welcome',
+      action: 'Clicked Continue',
+      label: 'Button'
+    })
+  }
+
   return (
     <React.Fragment>
       <Header />
       <WelcomeHero image={image} />
       <Wrapper>
         <Heading>{heading}</Heading>
-        <ButtonLink text={linkName} href={linkUrl} />
+        <ButtonLink text={linkName} href={linkUrl} handleClick={handleClick} />
       </Wrapper>
     </React.Fragment>
   )
