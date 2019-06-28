@@ -11,7 +11,7 @@ import Location from './Location'
 import Scene from './Scene'
 import PageNotFound from './PageNotFound'
 import GlobalStyle from '../styles/global'
-import ThemeData from '../data'
+import ThemeData from '../data/theme'
 
 const withTheme = Component => {
   return props => {
@@ -40,7 +40,7 @@ const Routes = () => (
     <Route path='/:env(cy|ff|shs)/thankyou/video' component={withTheme(Video)} />
     <Route path='/:env(cy|ff|shs)/thankyou' component={withTheme(ThankYou)} />
     <Route path='/:env(cy|ff|shs)/location/:id' component={withTheme(Location)} />
-    <Route path={`/:env(cy|ff|shs)/scene/:id`} component={withTheme(Scene)} />
+    <Route path='/:env(cy|ff|shs)/scene/:id' component={withTheme(Scene)} />
     <Route component={PageNotFound} />
   </Switch>
 )

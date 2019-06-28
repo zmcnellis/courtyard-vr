@@ -1,13 +1,13 @@
-import Logo from '../assets/fairfield/logo.png'
-import LandingPage from '../assets/fairfield/landing-page.jpg'
-import WelcomePage from '../assets/fairfield/welcome-page.jpg'
-import ThankYouPage from '../assets/fairfield/thank-you-page.jpg'
-import FrontDesk from '../assets/fairfield/front-desk.jpg'
-import FrontDeskA from '../assets/fairfield/front-desk-1.jpg'
-import FrontDeskB from '../assets/fairfield/front-desk-2.jpg'
-import Breakfast from '../assets/fairfield/breakfast.jpg'
-import BreakfastA from '../assets/fairfield/breakfast-1.jpg'
-import BreakfastB from '../assets/fairfield/breakfast-2.jpg'
+import Logo from '../../assets/fairfield/logo.png'
+import LandingPage from '../../assets/fairfield/landing-page.jpg'
+import WelcomePage from '../../assets/fairfield/welcome-page.jpg'
+import ThankYouPage from '../../assets/fairfield/thank-you-page.jpg'
+import FrontDesk from '../../assets/fairfield/front-desk.jpg'
+import FrontDeskA from '../../assets/fairfield/front-desk-1.jpg'
+import FrontDeskB from '../../assets/fairfield/front-desk-2.jpg'
+import Breakfast from '../../assets/fairfield/breakfast.jpg'
+import BreakfastA from '../../assets/fairfield/breakfast-1.jpg'
+import BreakfastB from '../../assets/fairfield/breakfast-2.jpg'
 
 const Fairfield = {
   styles: {

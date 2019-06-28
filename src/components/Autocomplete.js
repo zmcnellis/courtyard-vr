@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Autosuggest from 'react-autosuggest'
-import { properties } from '../data/properties'
+import { properties } from '../data/properties/courtyard'
 
 const getSuggestions = value => {
   const inputValue = value.trim().toLowerCase()
@@ -10,15 +10,15 @@ const getSuggestions = value => {
 
   const marshaTop5 = properties
     .filter(
-      item => item.MARSHA.toLowerCase().slice(0, inputLength) === inputValue
+      property => property.marsha.toLowerCase().slice(0, inputLength) === inputValue
     )
     .slice(0, 5)
 
   const propertyTop5 = properties
     .filter(
-      item =>
-        item.property
-          .slice(0, item.property.indexOf(' ('))
+      property =>
+        property.name
+          .slice(0, property.name.indexOf(' ('))
           .toLowerCase()
           .indexOf(value.toLowerCase()) !== -1
     )
@@ -27,9 +27,9 @@ const getSuggestions = value => {
   return [...new Set([...marshaTop5, ...propertyTop5])]
 }
 
-const getSuggestionValue = suggestion => suggestion.property
+const getSuggestionValue = suggestion => suggestion.name
 
-const renderSuggestion = suggestion => <div>{suggestion.property}</div>
+const renderSuggestion = suggestion => <div>{suggestion.name}</div>
 
 export default class Autocomplete extends Component {
   state = {
@@ -38,7 +38,7 @@ export default class Autocomplete extends Component {
   }
 
   onChange = (event, { newValue }) => {
-    const found = Boolean(properties.find(item => item.property === newValue))
+    const found = Boolean(properties.find(property => property.name === newValue))
     this.setState({
       value: newValue
     })
@@ -74,12 +74,12 @@ export default class Autocomplete extends Component {
         suggestions={suggestions}
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+        onSuggestionSelected={this.onSuggestionSelected}
         getSuggestionValue={getSuggestionValue}
         renderSuggestion={renderSuggestion}
         inputProps={inputProps}
         highlightFirstSuggestion
-        focusInputOnSuggestionClick={false}
-        onSuggestionSelected={this.onSuggestionSelected}
+        focusInputOnSuggestionClick
       />
     )
   }

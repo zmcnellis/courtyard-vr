@@ -1,13 +1,13 @@
-import Logo from '../assets/courtyard/logo.png'
-import LandingPage from '../assets/courtyard/landing-page.jpg'
-import WelcomePage from '../assets/courtyard/welcome-page.jpg'
-import ThankYouPage from '../assets/courtyard/thank-you-page.jpg'
-import FrontDesk from '../assets/courtyard/front-desk.jpg'
-import FrontDeskA from '../assets/courtyard/front-desk-1.jpg'
-import FrontDeskB from '../assets/courtyard/front-desk-2.jpg'
-import BistroBar from '../assets/courtyard/bistro-bar.jpg'
-import BistroBarA from '../assets/courtyard/bistro-bar-1.jpg'
-import BistroBarB from '../assets/courtyard/bistro-bar-2.jpg'
+import Logo from '../../assets/courtyard/logo.png'
+import LandingPage from '../../assets/courtyard/landing-page.jpg'
+import WelcomePage from '../../assets/courtyard/welcome-page.jpg'
+import ThankYouPage from '../../assets/courtyard/thank-you-page.jpg'
+import FrontDesk from '../../assets/courtyard/front-desk.jpg'
+import FrontDeskA from '../../assets/courtyard/front-desk-1.jpg'
+import FrontDeskB from '../../assets/courtyard/front-desk-2.jpg'
+import BistroBar from '../../assets/courtyard/bistro-bar.jpg'
+import BistroBarA from '../../assets/courtyard/bistro-bar-1.jpg'
+import BistroBarB from '../../assets/courtyard/bistro-bar-2.jpg'
 
 const Courtyard = {
   styles: {

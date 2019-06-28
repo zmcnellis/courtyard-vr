@@ -1,13 +1,13 @@
-import Logo from '../assets/springhill/logo.png'
-import LandingPage from '../assets/springhill/landing-page.jpg'
-import WelcomePage from '../assets/springhill/welcome-page.jpg'
-import ThankYouPage from '../assets/springhill/thank-you-page.jpg'
-import FrontDesk from '../assets/springhill/front-desk.jpg'
-import FrontDeskA from '../assets/springhill/front-desk-1.jpg'
-import FrontDeskB from '../assets/springhill/front-desk-2.jpg'
-import EveningExperience from '../assets/springhill/evening-experience.jpg'
-import EveningExperienceA from '../assets/springhill/evening-experience-1.jpg'
-import EveningExperienceB from '../assets/springhill/evening-experience-2.jpg'
+import Logo from '../../assets/springhill/logo.png'
+import LandingPage from '../../assets/springhill/landing-page.jpg'
+import WelcomePage from '../../assets/springhill/welcome-page.jpg'
+import ThankYouPage from '../../assets/springhill/thank-you-page.jpg'
+import FrontDesk from '../../assets/springhill/front-desk.jpg'
+import FrontDeskA from '../../assets/springhill/front-desk-1.jpg'
+import FrontDeskB from '../../assets/springhill/front-desk-2.jpg'
+import EveningExperience from '../../assets/springhill/evening-experience.jpg'
+import EveningExperienceA from '../../assets/springhill/evening-experience-1.jpg'
+import EveningExperienceB from '../../assets/springhill/evening-experience-2.jpg'
 
 const Springhill = {
   styles: {
