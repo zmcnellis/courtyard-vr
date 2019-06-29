@@ -26,7 +26,7 @@ const ThankYouForm = ({ buttonText, env, history }) => {
     const { id, name } = value
     const db = firebase.firestore()
     const updated_at = firebase.firestore.Timestamp.now()
-    db.doc(`welcome/${env}/properties/${id}`)
+    db.doc(`thankyou/${env}/properties/${id}`)
       .set({ name, updated_at })
       .then(() => {
         setIsLoading(false)
