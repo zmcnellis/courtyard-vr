@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ReactGA from 'react-ga'
 import styled from 'styled-components'
 import Autocomplete from './Autocomplete'
 import Button from './Button'
@@ -37,10 +38,18 @@ const ThankYouForm = ({ buttonText, env, history }) => {
       })
   }
 
+  const handleClick = () => {
+    ReactGA.event({
+      category: 'Thank You',
+      action: 'Clicked Submit',
+      label: 'Button'
+    })
+  }
+
   return (
     <Wrapper onSubmit={handleSubmit}>
       <Autocomplete setValid={setValid} setValue={setValue} data={data} />
-      {!disabled && <Button disabled={isLoading} text={buttonText} />}
+      {!disabled && <Button disabled={isLoading} text={buttonText} handleClick={handleClick} />}
       {error && <Error>{error}</Error>}
     </Wrapper>
   )

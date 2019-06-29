@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { darken } from 'polished'
 
-const Button = ({ text, disabled }) => {
+const Button = ({ text, disabled, handleClick }) => {
   return (
-    <StyledButton disabled={disabled} onClick={() => {}}>
+    <StyledButton disabled={disabled} onClick={handleClick}>
       {disabled ? 'Loading' : text}
     </StyledButton>
   )

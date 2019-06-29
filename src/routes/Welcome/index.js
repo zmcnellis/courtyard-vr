@@ -10,7 +10,6 @@ const Welcome = () => {
   const { heading, linkName, linkUrl, image } = useTheme('welcome')
 
   const handleClick = () => {
-    console.log('tracking button click')
     ReactGA.event({
       category: 'Welcome',
       action: 'Clicked Continue',
