@@ -1,4 +1,4 @@
-export const properties = [
+const Fairfield = [
   {
     "id": 1,
     "name": "Fairfield Pigeon Forge (TYSCP)",
@@ -6055,3 +6055,5 @@ export const properties = [
     "marsha": "BNAWE"
   }
 ]
+
+export default Fairfield

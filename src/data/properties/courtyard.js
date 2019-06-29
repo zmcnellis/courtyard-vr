@@ -1,4 +1,4 @@
-export const properties = [
+const Courtyard = [
   {
     "id": 1,
     "name": "Courtyard Pigeon Forge (TYSCP)",
@@ -6055,3 +6055,5 @@ export const properties = [
     "marsha": "BNAWE"
   }
 ]
+
+export default Courtyard

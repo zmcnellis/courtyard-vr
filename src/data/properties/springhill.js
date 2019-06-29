@@ -1,4 +1,4 @@
-export const properties = [
+const Springhill = [
   {
     "id": 1,
     "name": "SpringHill Pigeon Forge (TYSCP)",
@@ -6055,3 +6055,5 @@ export const properties = [
     "marsha": "BNAWE"
   }
 ]
+
+export default Springhill

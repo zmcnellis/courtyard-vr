@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   align-items: center;
   background-color: ${props => props.theme.colors.background};
   text-align: center;
-  padding: 50px 0;
+  padding: 20px 0 50px 0;
 `
 
 const Heading = styled.h1`

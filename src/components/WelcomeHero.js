@@ -31,7 +31,7 @@ const HeroImage = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    height: 350px;
+    height: 300px;
     width: 60%;
     background-size: cover;
   }

@@ -32,7 +32,7 @@ const Springhill = {
   welcome: {
     heading: 'Welcome to the Guest Experience 360',
     linkName: 'Continue',
-    linkUrl: 'https://mgscloud.marriott.com/common/brands/springhill-suites/guest-experience/',
+    linkUrl: 'https://www.google.com',
     image: WelcomePage
   },
   thankYou: {
@@ -40,7 +40,7 @@ const Springhill = {
     text: 'Enter your MARSHA code below to watch a Thank You video, then press submit.',
     buttonText: 'Submit',
     image: ThankYouPage,
-    video: ''
+    video: 'https://player.vimeo.com/video/14967518'
   },
   footer: {
     heading: 'View the SpringHill Suites Experience Guide on',

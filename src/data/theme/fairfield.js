@@ -32,7 +32,7 @@ const Fairfield = {
   welcome: {
     heading: 'Welcome to the Guest Experience 360',
     linkName: 'Continue',
-    linkUrl: 'https://mgscloud.marriott.com/common/brands/fairfield/guest-experience/',
+    linkUrl: 'https://www.google.com',
     image: WelcomePage
   },
   thankYou: {
@@ -40,7 +40,7 @@ const Fairfield = {
     text: 'Enter your MARSHA code below to watch a Thank You video, then press submit.',
     buttonText: 'Submit',
     image: ThankYouPage,
-    video: ''
+    video: 'https://player.vimeo.com/video/113248494'
   },
   footer: {
     heading: 'View the Fairfield Experience Guide on',

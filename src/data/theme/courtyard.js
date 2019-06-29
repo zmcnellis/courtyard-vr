@@ -32,7 +32,7 @@ const Courtyard = {
   welcome: {
     heading: 'Welcome to the Guest Experience 360',
     linkName: 'Continue',
-    linkUrl: 'https://mgscloud.marriott.com/common/brands/courtyard/guest-experience.html',
+    linkUrl: 'https://www.google.com',
     image: WelcomePage
   },
   thankYou: {
@@ -40,7 +40,7 @@ const Courtyard = {
     text: 'Enter your MARSHA code below to watch a Thank You video, then press submit.',
     buttonText: 'Submit',
     image: ThankYouPage,
-    video: ''
+    video: 'https://player.vimeo.com/video/26584759'
   },
   footer: {
     heading: 'View the Courtyard Experience Guide on',

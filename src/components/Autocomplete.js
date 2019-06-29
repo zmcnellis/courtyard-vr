@@ -1,35 +1,11 @@
 import React, { Component } from 'react'
 import Autosuggest from 'react-autosuggest'
-import { properties } from '../data/properties/courtyard'
-
-const getSuggestions = value => {
-  const inputValue = value.trim().toLowerCase()
-  const inputLength = inputValue.length
-
-  if (inputLength === 0) return []
-
-  const marshaTop5 = properties
-    .filter(
-      property => property.marsha.toLowerCase().slice(0, inputLength) === inputValue
-    )
-    .slice(0, 5)
-
-  const propertyTop5 = properties
-    .filter(
-      property =>
-        property.name
-          .slice(0, property.name.indexOf(' ('))
-          .toLowerCase()
-          .indexOf(value.toLowerCase()) !== -1
-    )
-    .slice(0, 5)
-
-  return [...new Set([...marshaTop5, ...propertyTop5])]
-}
 
 const getSuggestionValue = suggestion => suggestion.name
 
 const renderSuggestion = suggestion => <div>{suggestion.name}</div>
+
+const onSuggestionSelected = event => event.preventDefault()
 
 export default class Autocomplete extends Component {
   state = {
@@ -37,17 +13,52 @@ export default class Autocomplete extends Component {
     suggestions: []
   }
 
+  getSuggestions = value => {
+    const data = this.props.data
+    const inputValue = value.trim().toLowerCase()
+    const inputLength = inputValue.length
+
+    if (inputLength === 0) return []
+
+    const marshaTop5 = data
+      .filter(
+        property =>
+          property.marsha.toLowerCase().slice(0, inputLength) === inputValue
+      )
+      .slice(0, 5)
+
+    const propertyTop5 = data
+      .filter(
+        property =>
+          property.name
+            .slice(0, property.name.indexOf(' ('))
+            .toLowerCase()
+            .indexOf(value.toLowerCase()) !== -1
+      )
+      .slice(0, 5)
+
+    return [...new Set([...marshaTop5, ...propertyTop5])]
+  }
+
   onChange = (event, { newValue }) => {
-    const found = Boolean(properties.find(property => property.name === newValue))
+    const property = this.props.data.find(
+      property => property.name === newValue
+    )
+    const found = Boolean(property)
+
     this.setState({
       value: newValue
     })
     this.props.setValid(found)
+
+    if (found) {
+      this.props.setValue(property)
+    }
   }
 
   onSuggestionsFetchRequested = ({ value }) => {
     this.setState({
-      suggestions: getSuggestions(value)
+      suggestions: this.getSuggestions(value)
     })
   }
 
@@ -55,10 +66,6 @@ export default class Autocomplete extends Component {
     this.setState({
       suggestions: []
     })
-  }
-
-  onSuggestionSelected = event => {
-    event.preventDefault()
   }
 
   render () {
@@ -74,7 +81,7 @@ export default class Autocomplete extends Component {
         suggestions={suggestions}
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-        onSuggestionSelected={this.onSuggestionSelected}
+        onSuggestionSelected={onSuggestionSelected}
         getSuggestionValue={getSuggestionValue}
         renderSuggestion={renderSuggestion}
         inputProps={inputProps}

@@ -5,7 +5,7 @@ import { darken } from 'polished'
 const Button = ({ text, disabled }) => {
   return (
     <StyledButton disabled={disabled} onClick={() => {}}>
-      {text}
+      {disabled ? 'Loading' : text}
     </StyledButton>
   )
 }
@@ -26,9 +26,12 @@ const StyledButton = styled.button`
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
   outline: none;
   border: none;
+  opacity: ${props => props.disabled ? 0.6 : 1};
 
   &:hover {
-    background-color: ${props => darken(0.03, props.theme.colors.button)};
+    ${props => !props.disabled && `
+      background-color: ${darken(0.03, props.theme.colors.button)};
+    `}
     cursor: pointer;
   }
 `

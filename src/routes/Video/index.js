@@ -5,52 +5,62 @@ import Header from '../../components/Header'
 import { useTheme } from '../../utils/hooks'
 
 const Video = ({ env }) => {
-  const { image } = useTheme('thankYou')
+  const { image, video } = useTheme('thankYou')
 
   return (
     <React.Fragment>
       <Header />
       <WelcomeHero image={image} />
-      <Wrapper>
-        <Heading>
-          <span role='img' aria-label='Under Construction'>
-            👷{' '}
-          </span>
-          Under Construction
-        </Heading>
-      </Wrapper>
+      <Heading>Thank You!</Heading>
+      <IFrameWrapper>
+        <IFrame
+          src={video}
+          frameborder='0'
+          allow='autoplay; fullscreen'
+          allowfullscreen
+        />
+      </IFrameWrapper>
     </React.Fragment>
   )
 }
 
-const Wrapper = styled.div`
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  outline: inherit;
-  text-decoration: none;
+const IFrameWrapper = styled.div`
+  @media screen and (min-width: 500px) {
+    width: 60%;
+    padding: 40% 0 0 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 40%;
+    padding: 27% 0 0 0;
+  }
+
+  width: 90%;
+  padding: 66% 0 0 0;
+  position: relative;
+  margin: 0 auto;
+`
+
+const IFrame = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: ${props => props.theme.colors.background};
-  text-align: center;
-  padding: 50px 0;
+  height: 100%;
+  border: none;
 `
 
 const Heading = styled.div`
   color: ${props => props.theme.colors.primary};
   font-weight: normal;
   text-transform: uppercase;
-  width: 90%;
-  padding-bottom: 8px;
+  text-align: center;
+  width: 100%;
+  padding: 40px 0 0 0;
   font-size: 24px;
 
   @media screen and (min-width: 600px) {
     font-size: 32px;
-    max-width: 450px;
   }
 `
 

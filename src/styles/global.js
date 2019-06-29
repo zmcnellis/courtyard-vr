@@ -60,6 +60,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    /* scroll autocomplete suggestions box */
+    max-height: 192px;
+    overflow-y: auto;
   }
 
   .react-autosuggest__suggestion {
