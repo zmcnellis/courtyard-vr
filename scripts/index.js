@@ -1,6 +1,25 @@
 const program = require('commander')
 const firebase = require('firebase')
 
+/**********************************************************
+ * ------------------------ SCHEMA ------------------------
+ * {
+ *  thankyou: {
+ *    cy: {
+ *      properties: {
+ *        [id]: {
+ *          name: "string",
+ *          updated_at: "timestamp"
+ *        }
+ *      }
+ *    },
+ *    ff:  { ... },
+ *    shs: { ... }
+ *  }
+ * }
+ * ------------------------ SCHEMA ------------------------
+ **********************************************************/
+
 const init = () => {
   const config = {
     apiKey: 'AIzaSyD_NPKrtZOnriZBv2RLczNu8cMDFFwxDNo',
@@ -15,22 +34,8 @@ const init = () => {
 }
 
 const runQuery = (query, env) => {
-  const fn = query === 'thankyou' ? getThankYouData : getWelcomeData
+  const fn = query === 'get' ? getThankYouData : deleteThankYouData
   return fn(env)
-}
-
-const getWelcomeData = env => {
-  const db = firebase.firestore()
-  return db
-    .collection(`welcome/${env}/properties`)
-    .get()
-    .then(snapshot => {
-      console.log('id, name, updated_at')
-      snapshot.forEach(doc => {
-        const { name, updated_at } = doc.data()
-        console.log(`${doc.id}, ${name}, ${updated_at.toDate()}`)
-      })
-    })
 }
 
 const getThankYouData = env => {
@@ -47,13 +52,30 @@ const getThankYouData = env => {
     })
 }
 
+const deleteThankYouData = env => {
+  const db = firebase.firestore()
+  return db
+    .collection(`thankyou/${env}/properties`)
+    .get()
+    .then(snapshot => {
+      const batch = db.batch()
+      snapshot.forEach(doc => {
+        batch.delete(doc.ref)
+      })
+      return batch.commit().then(() => snapshot.size)
+    })
+    .then(deletedCount => {
+      console.log(`Deleted ${deletedCount} record(s)!`)
+    })
+}
+
 const parseArgs = () => {
   const validEnvironments = ['cy', 'ff', 'shs']
-  const validQueries = ['welcome', 'thankyou']
+  const validQueries = ['get', 'delete']
   program
     .option('-d, --debug', 'output extra debugging')
     .option('-e, --environment <type>', validEnvironments, 'cy')
-    .option('-q, --query <type>', validQueries, 'welcome')
+    .option('-q, --query <type>', validQueries, 'get')
   program.parse(process.argv)
 
   if (program.debug) {
