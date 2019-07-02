@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ThankYouForm from '../../components/ThankYouForm'
-import WelcomeHero from '../../components/WelcomeHero'
+import ThankYouHero from '../../components/ThankYouHero'
 import Header from '../../components/Header'
 import { useTheme } from '../../utils/hooks'
 
@@ -11,7 +11,7 @@ const ThankYou = ({ env, history }) => {
   return (
     <React.Fragment>
       <Header />
-      <WelcomeHero image={image} />
+      <ThankYouHero image={image} />
       <Wrapper>
         <Heading>{heading}</Heading>
         <Text>{text}</Text>

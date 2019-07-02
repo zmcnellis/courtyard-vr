@@ -8,6 +8,15 @@ import FrontDeskB from '../../assets/fairfield/front-desk-2.jpg'
 import Breakfast from '../../assets/fairfield/breakfast.jpg'
 import BreakfastA from '../../assets/fairfield/breakfast-1.jpg'
 import BreakfastB from '../../assets/fairfield/breakfast-2.jpg'
+import Arrival from '../../assets/fairfield/arrival.jpg'
+import ArrivalA from '../../assets/fairfield/arrival-1.jpg'
+import ArrivalB from '../../assets/fairfield/arrival-2.jpg'
+import CornerMarket from '../../assets/fairfield/corner-market.jpg'
+import CornerMarketA from '../../assets/fairfield/corner-market-1.jpg'
+import CornerMarketB from '../../assets/fairfield/corner-market-2.jpg'
+import GuestRoom from '../../assets/fairfield/guest-room.jpg'
+import GuestRoomA from '../../assets/fairfield/guest-room-1.jpg'
+import GuestRoomB from '../../assets/fairfield/guest-room-2.jpg'
 
 const Fairfield = {
   styles: {
@@ -51,40 +60,91 @@ const Fairfield = {
   locations: [
     {
       id: 1,
+      name: 'Arrival',
+      image: Arrival
+    },
+    {
+      id: 2,
       name: 'Front Desk',
       image: FrontDesk,
     },
     {
-      id: 2,
+      id: 3,
+      name: 'Corner Market',
+      image: CornerMarket
+    },
+    {
+      id: 4,
       name: 'Breakfast',
       image: Breakfast
-    }
+    },
+    {
+      id: 5,
+      name: 'Guest Room',
+      image: GuestRoom
+    },
   ],
   scenes: [
     {
       id: 1,
       locationId: 1,
       name: 'Experience A',
-      image: FrontDeskA
+      image: ArrivalA
     },
     {
       id: 2,
       locationId: 1,
       name: 'Experience B',
-      image: FrontDeskB
+      image: ArrivalB
     },
     {
       id: 3,
       locationId: 2,
       name: 'Experience A',
-      image: BreakfastA
+      image: FrontDeskA
     },
     {
       id: 4,
       locationId: 2,
       name: 'Experience B',
+      image: FrontDeskB
+    },
+    {
+      id: 5,
+      locationId: 3,
+      name: 'Experience A',
+      image: CornerMarketA
+    },
+    {
+      id: 6,
+      locationId: 3,
+      name: 'Experience B',
+      image: CornerMarketB
+    },
+    {
+      id: 7,
+      locationId: 4,
+      name: 'Experience A',
+      image: BreakfastA
+    },
+    {
+      id: 8,
+      locationId: 4,
+      name: 'Experience B',
       image: BreakfastB
-    }
+    },
+    {
+      id: 9,
+      locationId: 5,
+      name: 'Experience A',
+      image: GuestRoomA
+    },
+    {
+      id: 10,
+      locationId: 5,
+      name: 'Experience B',
+      image: GuestRoomB
+    },
   ],
   brand: {
     name: 'Fairfield by Marriott',

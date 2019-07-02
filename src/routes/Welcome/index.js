@@ -49,11 +49,13 @@ const Wrapper = styled.div`
 const Heading = styled.h1`
   color: ${props => props.theme.colors.primary};
   font-weight: normal;
+  font-size: 28px;
   text-transform: uppercase;
-  width: ${props => (props.fullWidth ? '90%' : 'calc(90% - 80px)')};
+  width: 90%;
   padding-bottom: 8px;
 
   @media screen and (min-width: 600px) {
+    font-size: 32px;
     max-width: 450px;
   }
 `
