@@ -71,7 +71,7 @@ export default class Autocomplete extends Component {
   render () {
     const { value, suggestions } = this.state
     const inputProps = {
-      placeholder: 'Property Name or MARSHA...',
+      placeholder: 'Search by location or MARSHA',
       value,
       onChange: this.onChange
     }

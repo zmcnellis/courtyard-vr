@@ -15,6 +15,9 @@ const Link = styled.a`
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;
+  font-family:
+    ${props => props.theme.fonts.primary},
+    ${props => props.theme.fonts.fallback};
   padding: 16px 0px;
   line-height: 20px;
   display: inline-block;

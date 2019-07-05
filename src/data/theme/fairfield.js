@@ -32,10 +32,11 @@ const Fairfield = {
     fonts: {
       primary: 'ProximaNova',
       fallback: 'Arial'
-    }
+    },
+    env: 'ff'
   },
   home: {
-    name: 'Activating the Fairfield Experience',
+    name: 'Fairfield Guest Experience 360',
     image: LandingPage
   },
   welcome: {
@@ -46,7 +47,7 @@ const Fairfield = {
   },
   thankYou: {
     heading: 'Congratulations',
-    text: 'Enter your MARSHA code below to watch a Thank You video, then press submit.',
+    text: 'Find your hotel below and press submit to watch a Thank You video.',
     buttonText: 'Submit',
     image: ThankYouPage,
     video: 'https://player.vimeo.com/video/113248494'

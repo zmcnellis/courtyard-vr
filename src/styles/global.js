@@ -24,6 +24,15 @@ const GlobalStyle = createGlobalStyle`
     /* border: 1px solid #aaa; */
     border: none;
     border-radius: 2px;
+    font-family:
+      ${props => props.theme.fonts.primary},
+      ${props => props.theme.fonts.fallback};
+  }
+
+  .react-autosuggest__input::placeholder {
+    font-family:
+      ${props => props.theme.fonts.primary},
+      ${props => props.theme.fonts.fallback};
   }
 
   .react-autosuggest__input--focused {
@@ -44,16 +53,18 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     top: 51px;
     width: 100%;
-    /* border: 1px solid #aaa; */
     border: none;
     background-color: #fff;
-    font-family: Helvetica, sans-serif;
     font-weight: 300;
     font-size: 16px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     z-index: 2;
     margin-bottom: 40px;
+
+    ${props => props.theme.env === 'shs' && `
+      font-size: 14px;
+    `}
   }
 
   .react-autosuggest__suggestions-list {

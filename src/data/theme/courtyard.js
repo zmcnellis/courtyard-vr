@@ -32,10 +32,11 @@ const Courtyard = {
     fonts: {
       primary: 'Museo',
       fallback: 'Verdana'
-    }
+    },
+    env: 'cy'
   },
   home: {
-    name: 'Activating the Courtyard Experience',
+    name: 'Courtyard Guest Experience 360',
     image: LandingPage
   },
   welcome: {
@@ -46,7 +47,7 @@ const Courtyard = {
   },
   thankYou: {
     heading: 'Congratulations',
-    text: 'Enter your MARSHA code below to watch a Thank You video, then press submit.',
+    text: 'Find your hotel below and press submit to watch a Thank You video.',
     buttonText: 'Submit',
     image: ThankYouPage,
     video: 'https://player.vimeo.com/video/26584759'

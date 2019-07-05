@@ -32,10 +32,11 @@ const Springhill = {
     fonts: {
       primary: 'ClanOT',
       fallback: 'Arial'
-    }
+    },
+    env: 'shs'
   },
   home: {
-    name: 'Activating the SpringHill Suites Experience',
+    name: 'SpringHill Guest Experience 360',
     image: LandingPage
   },
   welcome: {
@@ -46,7 +47,7 @@ const Springhill = {
   },
   thankYou: {
     heading: 'Congratulations',
-    text: 'Enter your MARSHA code below to watch a Thank You video, then press submit.',
+    text: 'Find your hotel below and press submit to watch a Thank You video.',
     buttonText: 'Submit',
     image: ThankYouPage,
     video: 'https://player.vimeo.com/video/14967518'

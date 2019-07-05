@@ -58,7 +58,7 @@ const Text = styled.h1`
   width: ${props => props.fullWidth ? '90%' : 'calc(90% - 80px)'};
 
   @media screen and (min-width: 600px) {
-    max-width: 450px;
+    max-width: 430px;
   }
 `
 
