@@ -36,7 +36,8 @@ const Springhill = {
     env: 'shs'
   },
   home: {
-    name: 'SpringHill Guest Experience 360',
+    heading: 'SpringHill Suites Guest Experience 360',
+    subheading: 'Select a hotel area below',
     image: LandingPage
   },
   welcome: {

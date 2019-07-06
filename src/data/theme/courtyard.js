@@ -36,7 +36,8 @@ const Courtyard = {
     env: 'cy'
   },
   home: {
-    name: 'Courtyard Guest Experience 360',
+    heading: 'Courtyard Guest Experience 360',
+    subheading: 'Select a hotel area below',
     image: LandingPage
   },
   welcome: {

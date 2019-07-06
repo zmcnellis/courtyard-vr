@@ -36,7 +36,8 @@ const Fairfield = {
     env: 'ff'
   },
   home: {
-    name: 'Fairfield Guest Experience 360',
+    heading: 'Fairfield Guest Experience 360',
+    subheading: 'Select a hotel area below',
     image: LandingPage
   },
   welcome: {

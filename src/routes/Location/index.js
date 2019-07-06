@@ -23,7 +23,7 @@ const Location = ({ match, env }) => {
     <React.Fragment>
       <Header />
       <Hero image={image} />
-      <PageInfo text={name} env={env} canNavigateBack />
+      <PageInfo name={name} env={env} />
       {scenes.map(scene => (
         <PageLink
           key={scene.id}
