@@ -27,6 +27,9 @@ const GlobalStyle = createGlobalStyle`
     font-family:
       ${props => props.theme.fonts.primary},
       ${props => props.theme.fonts.fallback};
+    ${props => props.theme.env === 'fp' && `
+      padding-top: 12px;
+    `}
   }
 
   .react-autosuggest__input::placeholder {

@@ -14,6 +14,7 @@ const firebase = require('firebase')
  *      }
  *    },
  *    ff:  { ... },
+ *    fp:  { ... },
  *    shs: { ... }
  *  }
  * }
@@ -70,7 +71,7 @@ const deleteThankYouData = env => {
 }
 
 const parseArgs = () => {
-  const validEnvironments = ['cy', 'ff', 'shs']
+  const validEnvironments = ['cy', 'ff', 'fp', 'shs']
   const validQueries = ['get', 'delete']
   program
     .option('-d, --debug', 'output extra debugging')

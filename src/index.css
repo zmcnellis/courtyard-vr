@@ -28,6 +28,35 @@
   font-weight: bold;
 }
 
+/* Four Points */
+@font-face {
+  font-family: "TradeGothic";
+  src: url("./assets/fourpoints/TradeGothic-100.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "TradeGothic";
+  src: url("./assets/fourpoints/TradeGothic-300.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Clarendon";
+  src: url("./assets/fourpoints/Clarendon-100.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Clarendon";
+  src: url("./assets/fourpoints/Clarendon-300.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
 /* SpringHill */
 @font-face {
   font-family: "ClanOT";

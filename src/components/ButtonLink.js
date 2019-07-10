@@ -31,6 +31,10 @@ const Link = styled.a`
   &:hover {
     background-color: ${props => darken(0.03, props.theme.colors.button)};
   }
+
+  ${props => props.theme.env === 'fp' && `
+    padding-top: 20px;
+  `}
 `
 
 export default ButtonLink

@@ -34,6 +34,10 @@ const Button = styled.button`
   padding: 10px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
+
+  ${props => props.theme.env === 'fp' && `
+    padding-top: 12px;
+  `}
 `
 
 const Text = styled.p`

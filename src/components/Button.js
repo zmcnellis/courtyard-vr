@@ -37,6 +37,10 @@ const StyledButton = styled.button`
     `}
     cursor: pointer;
   }
+
+  ${props => props.theme.env === 'fp' && `
+    padding-top: 20px;
+  `}
 `
 
 export default Button

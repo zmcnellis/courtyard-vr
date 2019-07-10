@@ -35,12 +35,12 @@ const withTheme = Component => {
 
 const Routes = () => (
   <Switch>
-    <Route exact path='/:env(cy|ff|shs)' component={withTheme(Home)} />
-    <Route path='/:env(cy|ff|shs)/welcome' component={withTheme(Welcome)} />
-    <Route path='/:env(cy|ff|shs)/thankyou/video' component={withTheme(Video)} />
-    <Route path='/:env(cy|ff|shs)/thankyou' component={withTheme(ThankYou)} />
-    <Route path='/:env(cy|ff|shs)/location/:id' component={withTheme(Location)} />
-    <Route path='/:env(cy|ff|shs)/scene/:id' component={withTheme(Scene)} />
+    <Route exact path='/:env(cy|ff|fp|shs)' component={withTheme(Home)} />
+    <Route path='/:env(cy|ff|fp|shs)/welcome' component={withTheme(Welcome)} />
+    <Route path='/:env(cy|ff|fp|shs)/thankyou/video' component={withTheme(Video)} />
+    <Route path='/:env(cy|ff|fp|shs)/thankyou' component={withTheme(ThankYou)} />
+    <Route path='/:env(cy|ff|fp|shs)/location/:id' component={withTheme(Location)} />
+    <Route path='/:env(cy|ff|fp|shs)/scene/:id' component={withTheme(Scene)} />
     <Route component={PageNotFound} />
   </Switch>
 )
