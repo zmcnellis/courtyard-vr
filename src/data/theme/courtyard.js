@@ -36,22 +36,21 @@ const Courtyard = {
     env: 'cy'
   },
   home: {
-    heading: 'Courtyard Guest Experience 360',
+    heading: 'Courtyard Guest Experience 360°',
     subheading: 'Select a hotel area below',
     image: LandingPage
   },
   welcome: {
-    heading: 'Welcome to the Guest Experience 360',
-    linkName: 'Continue',
-    linkUrl: 'https://www.google.com',
+    heading: 'Activating the Courtyard Experience',
+    linkName: 'Let’s Get Started',
+    linkUrl: 'https://mgscloud.marriott.com/common/brands/courtyard/guest-experience.html',
     image: WelcomePage
   },
   thankYou: {
-    heading: 'Congratulations',
-    text: 'Find your hotel below and press submit to watch a Thank You video.',
+    text: 'Find your hotel below and press submit for a Thank You message to share with your team.',
     buttonText: 'Submit',
     image: ThankYouPage,
-    video: 'https://player.vimeo.com/video/26584759'
+    video: 'https://player.vimeo.com/video/348717927'
   },
   footer: {
     heading: 'View the Courtyard Experience Guide on',

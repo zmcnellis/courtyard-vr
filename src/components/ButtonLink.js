@@ -12,7 +12,7 @@ const ButtonLink = ({ text, href, handleClick }) => {
 
 const Link = styled.a`
   background-color: ${props => props.theme.colors.button};
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   font-family:
@@ -21,8 +21,8 @@ const Link = styled.a`
   padding: 16px 0px;
   line-height: 20px;
   display: inline-block;
-  width: 150px;
-  text-transform: uppercase;
+  width: 200px;
+  /* text-transform: uppercase; */
   color: ${props => props.theme.colors.buttonText};
   transition: background-color 300ms ease;
   border-radius: 2px;

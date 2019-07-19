@@ -6,11 +6,13 @@ import Header from '../../components/Header'
 import AlertDialog from '../../components/AlertDialog'
 import PageNotFound from '../PageNotFound'
 
-const Scene = ({ match }) => {
+const Scene = ({ match, env }) => {
   const id = match.params.id
   const { image } =
     useTheme('scenes').find(scene => scene.id === Number(id)) || {}
   const [orientationAccess, setOrientationAccess] = useState(true)
+  const vrButtonVisible = env !== 'cy'
+
   if (!image) {
     return <PageNotFound />
   }
@@ -41,7 +43,11 @@ const Scene = ({ match }) => {
         />
       )}
       <SceneWrapper>
-        <a-scene loading-screen='enabled: false' embedded>
+        <a-scene
+          loading-screen='enabled: false'
+          vr-mode-ui={`enabled: ${vrButtonVisible}`}
+          embedded
+        >
           <a-assets>
             <img id='sky' src={image} alt='panorama' />
           </a-assets>

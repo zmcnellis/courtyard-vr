@@ -6,14 +6,13 @@ import Header from '../../components/Header'
 import { useTheme } from '../../utils/hooks'
 
 const ThankYou = ({ env, history }) => {
-  const { heading, text, buttonText, image } = useTheme('thankYou')
+  const { text, buttonText, image } = useTheme('thankYou')
 
   return (
     <React.Fragment>
       <Header />
       <ThankYouHero image={image} />
       <Wrapper>
-        <Heading>{heading}</Heading>
         <Text>{text}</Text>
         <ThankYouForm buttonText={buttonText} history={history} env={env} />
       </Wrapper>
@@ -38,30 +37,17 @@ const Wrapper = styled.div`
   padding: 20px 0 50px 0;
 `
 
-const Heading = styled.h1`
-  color: ${props => props.theme.colors.primary};
-  font-weight: normal;
-  text-transform: uppercase;
-  width: 90%;
-  padding-bottom: 8px;
-  font-size: 24px;
-
-  @media screen and (min-width: 600px) {
-    font-size: 32px;
-    max-width: 450px;
-  }
-`
-
 const Text = styled.h2`
   font-size: 18px;
   font-weight: normal;
   text-align: left;
   color: #fff;
   width: 90%;
-  margin-top: 0;
+  margin-top: 30px;
   padding: 0;
 
   @media screen and (min-width: 600px) {
+    margin-top: 50px;
     max-width: 450px;
   }
 `
