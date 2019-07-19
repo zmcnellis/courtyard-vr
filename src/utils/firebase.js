@@ -2,13 +2,13 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 
 const config = {
-  apiKey: 'AIzaSyD_NPKrtZOnriZBv2RLczNu8cMDFFwxDNo',
-  authDomain: 'marriott360-staging.firebaseapp.com',
-  databaseURL: 'https://marriott360-staging.firebaseio.com',
-  projectId: 'marriott360-staging',
-  storageBucket: 'marriott360-staging.appspot.com',
-  messagingSenderId: '1096321921949',
-  appId: '1:1096321921949:web:fe20055053965c86'
+  apiKey: 'AIzaSyD-bYgjoN168nfutlnz8h9diULKKS6xX9A',
+  authDomain: 'guestexp360.firebaseapp.com',
+  databaseURL: 'https://guestexp360.firebaseio.com',
+  projectId: 'guestexp360',
+  storageBucket: 'guestexp360.appspot.com',
+  messagingSenderId: '618068279449',
+  appId: '1:618068279449:web:25f385f6c6c75aac'
 }
 
 firebase.initializeApp(config)

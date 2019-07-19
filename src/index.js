@@ -8,14 +8,13 @@ import PageAnalytics from 'react-router-ga'
 import Routes from './routes'
 import './index.css'
 
-// TODO: when releasing to production, replace with the following line:
-// const analyticsId = 'UA-137462836-1'
-const analyticsId = 'UA-137462836-2'
-ReactGA.initialize(analyticsId, { debug: true })
+const analyticsId = 'UA-137462836-1' // production
+// const analyticsId = 'UA-137462836-2' // staging
+ReactGA.initialize(analyticsId)
 
 ReactDOM.render(
   <BrowserRouter>
-    <PageAnalytics id={analyticsId} debug>
+    <PageAnalytics id={analyticsId}>
       <Routes />
     </PageAnalytics>
   </BrowserRouter>,
