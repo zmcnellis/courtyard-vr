@@ -43,7 +43,7 @@ const Courtyard = {
   welcome: {
     heading: 'Activating the Courtyard Experience',
     linkName: 'Let’s Get Started',
-    linkUrl: 'https://mgscloud.marriott.com/common/brands/courtyard/guest-experience.html',
+    linkUrl: 'https://mgscloud.marriott.com/common/brands/courtyard/guest-experience/activating-the-guest-experience-kit.html',
     image: WelcomePage
   },
   thankYou: {
