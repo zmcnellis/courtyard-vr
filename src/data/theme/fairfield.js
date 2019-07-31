@@ -36,22 +36,21 @@ const Fairfield = {
     env: 'ff'
   },
   home: {
-    heading: 'Fairfield Guest Experience 360',
+    heading: 'Fairfield Guest Experience 360°',
     subheading: 'Select a hotel area below',
     image: LandingPage
   },
   welcome: {
-    heading: 'Welcome to the Guest Experience 360',
-    linkName: 'Continue',
+    heading: 'Welcome to the Guest Experience 360°',
+    linkName: 'Let’s Get Started',
     linkUrl: 'https://www.google.com',
     image: WelcomePage
   },
   thankYou: {
-    heading: 'Congratulations',
-    text: 'Find your hotel below and press submit to watch a Thank You video.',
+    text: 'Find your hotel below and press submit for a Thank You message to share with your team.',
     buttonText: 'Submit',
     image: ThankYouPage,
-    video: 'https://player.vimeo.com/video/113248494'
+    video: 'https://player.vimeo.com/video/351000089'
   },
   footer: {
     heading: 'View the Fairfield Experience Guide on',

@@ -3,10 +3,20 @@ import LandingPage from '../../assets/fourpoints/landing-page.jpg'
 import WelcomePage from '../../assets/fourpoints/welcome-page.jpg'
 import ThankYouPage from '../../assets/fourpoints/thank-you-page.jpg'
 import Arrival from '../../assets/fourpoints/arrival.jpg'
+import ArrivalA from '../../assets/fourpoints/arrival-1.jpg'
+import ArrivalB from '../../assets/fourpoints/arrival-2.jpg'
 import FrontDesk from '../../assets/fourpoints/front-desk.jpg'
+import FrontDeskA from '../../assets/fourpoints/front-desk-1.jpg'
+import FrontDeskB from '../../assets/fourpoints/front-desk-2.jpg'
 import FitnessCenter from '../../assets/fourpoints/fitness-center.jpg'
+import FitnessCenterA from '../../assets/fourpoints/fitness-center-1.jpg'
+import FitnessCenterB from '../../assets/fourpoints/fitness-center-2.jpg'
 import RestaurantBar from '../../assets/fourpoints/restaurant-bar.jpg'
+import RestaurantBarA from '../../assets/fourpoints/restaurant-bar-1.jpg'
+import RestaurantBarB from '../../assets/fourpoints/restaurant-bar-2.jpg'
 import GuestRoom from '../../assets/fourpoints/guest-room.jpg'
+import GuestRoomA from '../../assets/fourpoints/guest-room-1.jpg'
+import GuestRoomB from '../../assets/fourpoints/guest-room-2.jpg'
 
 const FourPoints = {
   styles: {
@@ -26,22 +36,21 @@ const FourPoints = {
     env: 'fp'
   },
   home: {
-    heading: 'Four Points Guest Experience 360',
+    heading: 'Four Points Guest Experience 360°',
     subheading: 'Select a hotel area below',
     image: LandingPage
   },
   welcome: {
-    heading: 'Welcome to the Guest Experience 360',
-    linkName: 'Continue',
+    heading: 'Welcome to the Guest Experience 360°',
+    linkName: 'Let’s Get Started',
     linkUrl: 'https://www.google.com',
     image: WelcomePage
   },
   thankYou: {
-    heading: 'Congratulations',
-    text: 'Find your hotel below and press submit to watch a Thank You video.',
+    text: 'Find your hotel below and press submit for a Thank You message to share with your team.',
     buttonText: 'Submit',
     image: ThankYouPage,
-    video: 'https://player.vimeo.com/video/35396305'
+    video: 'https://player.vimeo.com/video/351000100'
   },
   footer: {
     heading: 'View the Four Points Experience Guide on',
@@ -77,6 +86,66 @@ const FourPoints = {
     },
   ],
   scenes: [
+    {
+      id: 1,
+      locationId: 1,
+      name: 'Experience A',
+      image: ArrivalA
+    },
+    {
+      id: 2,
+      locationId: 1,
+      name: 'Experience B',
+      image: ArrivalB
+    },
+    {
+      id: 3,
+      locationId: 2,
+      name: 'Experience A',
+      image: FrontDeskA
+    },
+    {
+      id: 4,
+      locationId: 2,
+      name: 'Experience B',
+      image: FrontDeskB
+    },
+    {
+      id: 5,
+      locationId: 3,
+      name: 'Experience A',
+      image: FitnessCenterA
+    },
+    {
+      id: 6,
+      locationId: 3,
+      name: 'Experience B',
+      image: FitnessCenterB
+    },
+    {
+      id: 7,
+      locationId: 4,
+      name: 'Experience A',
+      image: RestaurantBarA
+    },
+    {
+      id: 8,
+      locationId: 4,
+      name: 'Experience B',
+      image: RestaurantBarB
+    },
+    {
+      id: 9,
+      locationId: 5,
+      name: 'Experience A',
+      image: GuestRoomA
+    },
+    {
+      id: 10,
+      locationId: 5,
+      name: 'Experience B',
+      image: GuestRoomB
+    }
   ],
   brand: {
     name: 'Four Points by Marriott',
