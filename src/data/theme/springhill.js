@@ -43,7 +43,7 @@ const Springhill = {
   welcome: {
     heading: 'Welcome to the Guest Experience 360°',
     linkName: 'Let’s Get Started',
-    linkUrl: 'https://www.google.com',
+    linkUrl: 'https://qrs.ly/4badzxw',
     image: WelcomePage
   },
   thankYou: {

@@ -43,7 +43,7 @@ const Fairfield = {
   welcome: {
     heading: 'Welcome to the Guest Experience 360°',
     linkName: 'Let’s Get Started',
-    linkUrl: 'https://www.google.com',
+    linkUrl: 'https://qrs.ly/xcadzxt',
     image: WelcomePage
   },
   thankYou: {

@@ -43,7 +43,7 @@ const FourPoints = {
   welcome: {
     heading: 'Welcome to the Guest Experience 360°',
     linkName: 'Let’s Get Started',
-    linkUrl: 'https://www.google.com',
+    linkUrl: 'https://qrs.ly/2zadzxn',
     image: WelcomePage
   },
   thankYou: {
